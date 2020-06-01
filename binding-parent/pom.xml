@@ -63,6 +63,7 @@ LICENSE file.
               <descriptorRef>datastore-specific-assembly</descriptorRef>
             </descriptorRefs>
             <finalName>ycsb-${project.artifactId}-${project.version}</finalName>
+            <finalName>ycsb-${project.artifactId}-${project.version}</finalName>
             <formats>
               <format>tar.gz</format>
             </formats>

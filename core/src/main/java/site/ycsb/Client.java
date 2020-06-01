@@ -16,7 +16,6 @@
  */
 
 package site.ycsb;
-
 import site.ycsb.measurements.Measurements;
 import site.ycsb.measurements.exporter.MeasurementsExporter;
 import site.ycsb.measurements.exporter.TextMeasurementsExporter;

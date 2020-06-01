@@ -63,6 +63,7 @@ LICENSE file.
       <fileMode>0644</fileMode>
     </fileSet>
   </fileSets>
+
   <dependencySets>
     <dependencySet>
       <outputDirectory>lib</outputDirectory>

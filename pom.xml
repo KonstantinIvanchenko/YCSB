@@ -111,6 +111,7 @@ LICENSE file.
     <maven.dependency.version>2.10</maven.dependency.version>
 
     <!-- datastore binding versions, lex sorted -->
+    <multinodekvdb.version>0.0.1</multinodekvdb.version>
     <accumulo.1.9.version>1.9.3</accumulo.1.9.version>
     <aerospike.version>3.1.2</aerospike.version>
     <arangodb.version>4.4.1</arangodb.version>
@@ -158,6 +159,7 @@ LICENSE file.
     <module>core</module>
     <module>binding-parent</module>
     <module>distribution</module>
+    <module>multinodekvdb</module>
     <!-- all the datastore bindings, lex sorted please -->
     <module>accumulo1.9</module>
     <module>aerospike</module>
@@ -242,7 +244,7 @@ LICENSE file.
           </execution>
         </executions>
       </plugin>
-      <plugin>
+      <!--<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
@@ -251,7 +253,18 @@ LICENSE file.
           <target>1.8</target>
         </configuration>
       </plugin>
+       -->
+
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
+      </plugin>
+
+      <!--<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <executions>
@@ -266,7 +279,7 @@ LICENSE file.
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
   <profiles>
